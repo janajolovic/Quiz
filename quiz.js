@@ -2,10 +2,10 @@ const question = document.querySelector(".question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
 
 let currentQuestion = {};
-let acceptingAnswers = true;
+let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
-let availableQuestion = {};
+let availableQuestions = {};
 
 
 let questions = [
@@ -39,3 +39,31 @@ let questions = [
 
 const correct_bonus = 10;
 const max_questions = 3;
+
+
+startGame = () => {
+    questionCounter = 0;
+    score = 0;
+    availableQuestions = [...questions];
+    console.log(availableQuestions)
+    getNewQuestion();
+}
+
+getNewQuestion = () => {
+    questionCounter++;
+    const questionIndex = Math.floor(Math.random() * availableQuestions.length);
+    console.log(questionIndex)
+    currentQuestion = availableQuestions[questionIndex];
+    console.log(currentQuestion)
+    question.innerText = currentQuestion.question;
+
+    choices.forEach(choice => {
+        const number = choice.dataset['number'];
+        choice.innerText = currentQuestion['choice'+number]
+    })
+
+    availableQuestions.splice(questionIndex, 1);
+    acceptingAnswers = true
+}
+
+startGame();
