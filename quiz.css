@@ -91,5 +91,13 @@ h2 {
 
 .choice-text {
     padding: 1.5rem;
-    width: 100%;
+    width: 100% ;
+}
+
+.correct {
+    background-color: #32a832;
+}
+
+.incorrect {
+    background-color: #d83131;
 }
