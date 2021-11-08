@@ -105,6 +105,7 @@ h2 {
 .hud {
     display: flex;
     justify-content: space-between;
+    padding: 1rem;
 }
 
 .hud-prefix {
@@ -114,4 +115,17 @@ h2 {
 
 .hud-main-text {
     text-align: center;
+}
+
+.progressBar {
+    width: 20rem;
+    height: 4rem;
+    border: 1px solid #56a5eb;
+    margin: 10px 0px 25px 0px;
+}
+
+.progressBar-full {
+    background-color: #56a5eb;
+    height: 3.8rem;
+    width: 0%;
 }
