@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <div id="end">
-            <h1 id="finalscore">0</h1>
+            <h1 id="finalscore"></h1>
             <form>
                 <input 
                     type="text"
@@ -21,11 +21,17 @@
                     class='btn' 
                     type="submit"
                     id="saveScoreBtn"
-                    onClick="SaveHighscore(event)">Save</button>
+                    onclick="saveHighscore(event)"
+                    disabled>
+                    Save
+                </button>
             </form>
             <a href="./quizGame.html" class="btn">Play again</a>
             <a href="/" class="btn">Go home</a>
         </div>
     </div>
+
+
+    <script src="end.js"></script>
 </body>
 </html>
