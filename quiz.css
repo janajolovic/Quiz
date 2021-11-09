@@ -129,3 +129,25 @@ h2 {
     height: 3.8rem;
     width: 0%;
 }
+
+#end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    font-size: 1.8rem;
+    padding: 1.5rem;
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+}
