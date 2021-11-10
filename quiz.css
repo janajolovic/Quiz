@@ -177,3 +177,21 @@ input::placeholder {
 .high-score:hover {
     transform: scale(1.025);
 }
+
+#loader {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    border: 1.6rem solid white;
+    border-top: 1.6rem solid #56a5eb;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360%);
+    }
+}
